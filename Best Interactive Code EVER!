@@ -1,0 +1,109 @@
+name = input ("whats yo name?")
+print("You are in a helecopter hovering over the amazon. do you a) put your backpack on and get ready to jump. b) get a paracutte and get ready to jump out of the helecoper. or c) get a paracutte and some goggles then jump through the window")
+choice1 = input("what do you choose?")
+print(choice1)
+
+if choice1 == "a":
+    print("the door opens, you can hear the loud blades chopping and chopping and chopping.")
+    print("do you a) chicken out and get in the passengers seat of the helicoper. b) do a flip out of the helecopter and pull the strap. or c) stumble out of the helecopter and fall akwrerdly untill you pull the strap")
+    choice2 = input ("what do you choose?")
+    if choice2 == "a":
+        print("you have made a good choice seince if you had gone out you would've fallen to your death")
+        print("do you a) get a parachutte and jump out. b) tell the driver to go home. or c) dangle your legs out of the helicopter and enjoy the beauty.")
+        choice3 = input ("what do you choose")
+        if choice3 == "a":
+            print("you still have your backpack on so the parachutte dosen't fit and you fall to your death. :(")
+        elif choice3 == "b":
+            print("the driver shuts the door and you fly into the sunset")
+        elif choice3 == "c":
+            print("the driver shuts the door, your legs fall out into oblivion he looks back and opens the door. you lose your balence and fall out")
+    elif choice2 == "b":
+        print("you pull the strap and your backpack opens. your lunch flies away while you fall without your paracutte")
+        print("do you a) try and head for the lake. b)accept your death and die inside. or c) yell for the helecopter to come and get you")
+        choice3 = input ("what do you choose?")
+        if choice3 == "a":
+            print("you fall into the lake and break all your bones. you slowly drown")
+        elif choice3 == "b":
+            print("you fall into the thick woody canopy, but by a merical some vines catch you and hang you a foot above the ground. you get down and live")
+        elif choice3 == "c":
+            print("you see the driver listening to god's plan, and doing a awful dance. you hit the ground and die")
+    elif choice2 == "c":
+        print("you pull the strap and your phone, wallet, and lunch fly away. you are falling with no support")
+        print("do you a) try and grab onto your friend with a paracutte. b) keep pulling the strap direrly. or c) do a cannonball into your death")
+        choice3 = input ("what do you do")
+        if choice3 == "a":
+            print("you grab on and his paracutte rips with all the weight. you both fall to your death")
+        elif choice3 == "b":
+            print("you pull your strap to no use and die")
+        elif choice3 == "c":
+            print("you die awesomly, bravo")
+elif choice1 == "b":
+    print("the doors open and you jump")
+    print("do you a) pull the strap and check the time on your phone. b) fall and injoy the sunset. or c) pull the strap and wait")
+    choice2 = input ("what do you choose?")
+    if choice2 == "a":
+        print("while you slowly drift down, the time says 2:30")
+        print("do you a) aim for a clear opening. b) brace for impact. or c) aim for the lake")
+        choice3 = input("what do you choose?")
+        if choice3 == "a":
+            print("you fall down into the clearing and go to the camp")
+        elif choice3 == "b":
+            print("you fall into the trees and get stuck. leoperds come  and devour you")
+        elif choice3 == "c":
+            print("you fall into the lake and aligators devour you")
+    elif choice2 == "b":
+        print("you are an idiot" + name + ". you frogot to pull your stap")
+        print("do you a) pull your strap. b) sigh and die. or c) yell for help")
+        choice3 = input("what do you choose?")
+        if choice3 == "a":
+            print("you pull your strap and the paracutte comes out a second too late and you hit the ground")
+        elif choice3 == "b":
+            print("are you serious?" + name + "that was a bad choice")
+        elif choice3 == "c":
+            print("that was a dumb choice, nobody is around to hear.")
+    elif choice2 == "c":
+        print("you land in a clearing and start to head twords camp. you get lost within 2 minuets. great job")
+        print("do you a) go right. b) go left. or c) try and make a new camp with some sticks, and a lighter")
+        choice3 = input("what do you choose?")
+        if choice3 == "a":
+            print("good choice, right's always right, right? WRONG you get eaten by tigers")
+        if choice3 == "b":
+            print("left leads you to a bush. you go over the bush and find camp")
+        if choice3 == "c":
+            print("it is night. you've wasted all your fuel tring to light wet wood. an anaconda swallows you while you are sleeping.")
+elif choice1 == "c":
+    print("why did you do that? well, now you've done it!")
+    print("do you a) pull your strap and yell 'GOOD BYE SUCKERS!'. b) pull your stap and pick the glass pieces out of your face. or c) pull the strap and comit suicide with a falling shard of glass")
+    choice2 = input("what do you choose?")
+    if choice2 == "a":
+        print("why would you yell that" + name + "? one of the passengers shoots you with a shotgun in the crotch.")
+        print("do you a) yell 'YOU IDIOT!'. b) say that you deserved that and fall down to the trees. or c) think about what you've lost")
+        choice3 =input("what do you choose?")
+        if choice3 == "a":
+            print("again, really? he shoots you again in the face.")
+        elif choice3 == "b":
+            print("you get stuck in the canopy and bleed to death")
+        elif choice3 == "c":
+            print("don't feel guilty. don't call people names for no reason.")
+    elif choice2 == "b":
+        print("good choice")
+        print("do you a) call for somebody to get you. b) go down and try and get to camp. or c) throw your glass shards into the air.")
+        choice3 = input("what do you choose?")
+        if choice3 == "a":
+            print("nobody can hear you over the blades. you fall into the canaopy and die of your infections")
+        elif choice3 == "b":
+            print("when you land bugs swarm you and lay eggs in your wounds")
+        elif choice3 == "c":
+            print("all the shards cut the paracutte and you fall twords your death")
+    elif choice2 == "c":
+        print("WHY DID YOU DO THAT?!?!?!?!?!?")
+        print("do you a) die. b) die. or c) live.")
+        choice3 = input("what do you choose?")
+        if choice3 == "a":
+            print("yup, you're dead")
+        elif choice3 == "b":
+            print("you found a hack in life!!! you now rule the universe.")
+        elif choice3 == "c":
+            print("did you really think that would work? you die")
+
+    
