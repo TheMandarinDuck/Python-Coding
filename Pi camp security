@@ -1,0 +1,9 @@
+user = input("who are you? keep in mind if you answer incorrecctly, there will be swift punishment.")
+
+if user == "Vinnie":
+    print("Good to see you. You may proceed.")
+elif user == "vinnie":
+    print("Good to see you, don't be lazy with your capitalazation") 
+else:
+    print("Self destruct sequence activarted, you have three seconds to live")
+    
