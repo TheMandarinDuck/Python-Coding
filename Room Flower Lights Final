@@ -1,0 +1,60 @@
+from time import sleep
+import RPi.GPIO as GPIO
+import time
+GPIO.setwarnings(True)
+import datetime as dt
+
+Flower1=19 #White
+Flower2=15 #Orange
+Flower3=18 #Black
+Flower4=11 #Yellow`
+p=1
+
+start_time=dt.time(21, 21, 0)
+end_time=dt.time(21, 22, 0)
+
+def setup():
+    GPIO.setmode(GPIO.BOARD)
+    GPIO.setup(Flower1, GPIO.OUT)
+    GPIO.setup(Flower2, GPIO.OUT)
+    GPIO.setup(Flower3, GPIO.OUT)
+    GPIO.setup(Flower4, GPIO.OUT)
+    
+    
+def loop():
+    while True:
+        curr_time = dt.datetime.now().time()
+        if curr_time < start_time or curr_time > end_time:
+            GPIO.output(Flower1, GPIO.HIGH)
+            GPIO.output(Flower2, GPIO.HIGH)
+            GPIO.output(Flower3, GPIO.HIGH)
+            GPIO.output(Flower4, GPIO.HIGH)
+            time.sleep(1)
+            continue
+        
+        GPIO.output(Flower1, GPIO.LOW)
+        time.sleep(p)
+        GPIO.output(Flower1, GPIO.HIGH)
+        GPIO.output(Flower2, GPIO.LOW)
+        time.sleep(p)
+        GPIO.output(Flower2, GPIO.HIGH)
+        GPIO.output(Flower3, GPIO.LOW)
+        time.sleep(p)
+        GPIO.output(Flower3, GPIO.HIGH)
+        GPIO.output(Flower4, GPIO.LOW)
+        time.sleep(p)
+        GPIO.output(Flower4, GPIO.HIGH)
+
+
+    
+        
+    
+def destroy():
+	GPIO.cleanup()             # Release resource
+
+if __name__ == '__main__':     # Program start from here
+	setup()
+	try:
+		loop()
+	except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
+		destroy()
